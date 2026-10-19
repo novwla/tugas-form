@@ -1,44 +1,27 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pesan Mahasiswa</title>
+    <title>Form Pesan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="card narrow-wrapper">
+    <h1>Form Pesan Mahasiswa</h1>
 
-            <h1>Form Pesan Mahasiswa</h1>
+    <form method="post" action="hasil_pesan.php">
+        <p>Nama</p>
+        <input type="text" name="nama">
 
-            <form action="hasil_pesan.php" method="post">
+        <p>Kelas</p>
+        <input type="text" name="kelas">
 
-                <div class="form-group">
-                    <label for="nama">Nama</label>
-                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
-                </div>
+        <p>Pesan / Kesan</p>
+        <textarea name="pesan" rows="5" cols="30"></textarea>
 
-                <div class="form-group">
-                    <label for="kelas">Kelas</label>
-                    <input type="text" id="kelas" name="kelas" placeholder="Masukkan kelas Anda" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="pesan">Pesan / Kesan</label>
-                    <textarea id="pesan" name="pesan" placeholder="Tuliskan pesan atau kesan Anda" required></textarea>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Kirim</button>
-                    <a href="index.php" class="btn btn-secondary">Kembali</a>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
+        <br><br>
+        <button type="submit">Kirim</button>
+        <a href="index.php">Kembali</a>
+    </form>
 
 </body>
 </html>
